@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  
+<div class="jumbotron text-center">
+ <h1> Scara </h1>
+ <p class="lead"> Home Content </p>
+</div>
+
+
+<form action = "/submit" method = "post" enctype="multipart/form-data">
+        <input type="file" name="file" />  
+        <input type = "submit" value="Upload">  
+</form>  
+
+
+{% endblock %}

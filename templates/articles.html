@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="form_center">
+  <div class="form_left">
+    <form action="{{ url_for('submit') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileToUpload">
+        <button type="submit" value="uploadImage" name="submit">Submit</button><br><br>
+    </form>
+  </div>
+</div>
+
+ <h1> Stock </h1>
+ <ul class='list-group'>
+  {% for article in articles %}
+    <li class="list-group-item">{{article.title}} {{article.mrp}} </li>
+  {% endfor %}
+
+
+
+
+  
+ </ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1> Bill </h1>
+  <ul class='list-group'>
+  {% for item in data %}
+    <li class="list-group-item"> {{item[0]}}                   {{item[1]}} </li>
+
+
+
+  {% endfor %}
+ 
+
+
+
+{% endblock %}
