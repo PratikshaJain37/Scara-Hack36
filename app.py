@@ -51,18 +51,12 @@ def submit():
 			for i in range(len(Articles)):
 				if data==Articles[i]['id']:
 					S.append([Articles[i]['title'],Articles[i]['mrp']])
-			
-			
-					
-			
-			
-			
+	
 			
 	return render_template('bill.html', data=S) 
 				  
 
-				   
-				   
+				   	   
 				   
 if __name__ == '__main__':
 	app.run(debug = True)
